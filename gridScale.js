@@ -1187,10 +1187,11 @@ caclByXnY(x,y) {
           icon: '<i class="fas fa-check"></i>',
           label: "Set the grid",
           callback: dlg => {
-            const form = Array.from(dlg.find('#compendium-create')).reduce((acc, input) => ({ ...acc, [input.id]: input.value}), {});
+            const form = dlg.find('#compendium-create');
+            const data = Object.fromEntries(new FormData(form).entries());
                   //console.log(data);
                   //sgLayer.testVar3 = data;
-            sgLayer.caclByXnY(form.xNum,form.yNum);
+            sgLayer.caclByXnY(data.xNum,data.yNum);
           //  Compendium.create(data).then(pack => {
             //  this.render();
             //});
