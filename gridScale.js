@@ -1188,7 +1188,7 @@ caclByXnY(x,y) {
           label: "Set the grid",
           callback: dlg => {
             const form = dlg.find('#compendium-create'),
-                  data = validateForm(form[0]);
+                  data = FormApplication.processForm(form[0]);
                   //console.log(data);
                   //sgLayer.testVar3 = data;
                   sgLayer.caclByXnY(data.xNum,data.yNum);

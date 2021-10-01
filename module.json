@@ -9,7 +9,7 @@
 	"packs": [],
 	"minimumCoreVersion": "0.4.4",
 	"compatibleCoreVersion": "0.8.7",
-	"url": "https://github.com/UberV/scaleGrid/",
-	"manifest": "https://raw.githubusercontent.com/UberV/scaleGrid/master/module.json",
-	"download": "https://github.com/UberV/scaleGrid/archive/master.zip"
+	"url": "https://github.com/OnkOnk/scaleGrid/",
+	"manifest": "https://raw.githubusercontent.com/OnkOnk/scaleGrid/master/module.json",
+	"download": "https://github.com/OnkOnk/scaleGrid/archive/master.zip"
 }

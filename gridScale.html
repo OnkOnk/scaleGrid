@@ -2,11 +2,11 @@
 <ol id="gridCont" class="app grid-tools flexcol">
     {{#each controls as |control cid|}}
     <li class="grid-control {{control.status}}" data-control="{{cid}}" id="gs-{{cid}}">
-        <i class="{{control.icon}}"></i>
+        <em class="{{control.icon}}"></em>
         <ol class="grid-tools">
             {{#each control.tools as |tool tid|}}
             <li class="grid-tool {{tool.status}}" title="{{tool.name}}" data-tool="{{tid}}" id="gs-{{tid}}">
-                <i class="{{tool.icon}}"></i>
+                <em class="{{tool.icon}}"></em>
             </li>
             {{/each}}
         </ol>
