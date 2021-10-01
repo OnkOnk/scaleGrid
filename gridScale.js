@@ -1187,11 +1187,10 @@ caclByXnY(x,y) {
           icon: '<i class="fas fa-check"></i>',
           label: "Set the grid",
           callback: dlg => {
-            const form = dlg.find('#compendium-create'),
-                  data = dlg.getData(form[0]);
+            const form = Array.from(dlg.find('#compendium-create')).reduce((acc, input) => ({ ...acc, [input.id]: input.value}), {});
                   //console.log(data);
                   //sgLayer.testVar3 = data;
-                  sgLayer.caclByXnY(data.xNum,data.yNum);
+                  sgLayer.caclByXnY(form.xNum,form.yNum);
           //  Compendium.create(data).then(pack => {
             //  this.render();
             //});
@@ -1199,6 +1198,10 @@ caclByXnY(x,y) {
         }
       }
     }).render(true);
+  }
+
+  async knownXY() {
+
   }
 
     // <================== End Dialog Displaying Functions  ====================>
