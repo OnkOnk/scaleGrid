@@ -2,7 +2,7 @@
 	"name": "scaleGrid",
 	"title": "Grid Kjell Menu",
 	"description": "Fork of Grid Scale Menu to fix one bug",
-	"version": "0.0.15.5",
+	"version": "0.0.16",
 	"author": "Kjell",
 	"scripts": ["./gridScale.js"],
 	"styles": ["./gridScale.css"],

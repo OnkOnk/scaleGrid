@@ -635,9 +635,9 @@ class ScaleGridLayer extends CanvasLayer {
 
 
 
-caclByXnY(x,y) {
+calcByXnY(x,y) {
     let  canD = canvas.dimensions;
-    let pixels = ((canD.sceneHeight / x)+(canD.sceneWidth / y)) / 2
+    let pixels = Math.round(((canD.sceneHeight / x)+(canD.sceneWidth / y)) / 2);
     let curScene = game.scenes.get(canvas.scene.data._id);
     //console.log(curScene);
     curScene.update({grid: pixels});
@@ -1187,11 +1187,11 @@ caclByXnY(x,y) {
           icon: '<i class="fas fa-check"></i>',
           label: "Set the grid",
           callback: dlg => {
-            const form = dlg.find('#compendium-create');
+            const form = dlg.find('#compendium-create')[0];
             const data = Object.fromEntries(new FormData(form).entries());
                   //console.log(data);
                   //sgLayer.testVar3 = data;
-            sgLayer.caclByXnY(data.xNum,data.yNum);
+            sgLayer.calcByXnY(data.xNum,data.yNum);
           //  Compendium.create(data).then(pack => {
             //  this.render();
             //});
