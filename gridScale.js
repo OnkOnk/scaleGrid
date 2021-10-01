@@ -1200,10 +1200,6 @@ caclByXnY(x,y) {
     }).render(true);
   }
 
-  async knownXY() {
-
-  }
-
     // <================== End Dialog Displaying Functions  ====================>
 
 
