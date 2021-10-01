@@ -1190,7 +1190,7 @@ caclByXnY(x,y) {
             const form = Array.from(dlg.find('#compendium-create')).reduce((acc, input) => ({ ...acc, [input.id]: input.value}), {});
                   //console.log(data);
                   //sgLayer.testVar3 = data;
-                  sgLayer.caclByXnY(form.xNum,form.yNum);
+            sgLayer.caclByXnY(form.xNum,form.yNum);
           //  Compendium.create(data).then(pack => {
             //  this.render();
             //});
